@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     return (
@@ -9,10 +10,10 @@ const Header = () => {
                     l db</Link>
             </div>
             <div className='flex gap-4 text-xl'>
-                <Link to='/'>Home</Link>
-                <Link to='/menu'>Menu</Link>
-                <Link to='/about'>About Us</Link>
-                <Link to='/contact'>Contact</Link>
+                <CustomLink to='/'>Home</CustomLink>
+                <CustomLink to='/menu'>Menu</CustomLink>
+                <CustomLink to='/contact'>Contact</CustomLink>
+                <CustomLink to='/about'>About Us</CustomLink>
             </div>
         </div>
     );
